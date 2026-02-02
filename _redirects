@@ -2,7 +2,9 @@
 # 永久转发（301）：搜索引擎会收录新地址，推荐生产环境使用
 # 临时转发（302）：适合测试阶段，搜索引擎不更新收录
 
-# 1. 将 xxx.com/blog 转发到 blog项目的GitHub Pages地址
+# 匹配无斜杠的根路径 /zhangxueyou（解决直接访问的404）
+/zhangxueyou  https://785975464.github.io/zhangxueyou  200
+# 匹配所有带后缀的子路径 /zhangxueyou/xxx（你原来的规则，保留）
 /zhangxueyou/*  https://785975464.github.io/zhangxueyou/:splat  200
-# 2. 根域名 xxx.com 保留主项目自身页面（可写自己的主页面逻辑）
+# 根域名 xxx.com 保留主项目自身页面（可写自己的主页面逻辑）
 /       /index.html  200
