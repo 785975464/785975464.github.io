@@ -6,5 +6,7 @@
 /zhangxueyou  https://785975464.github.io/zhangxueyou  200
 # 匹配所有带后缀的子路径 /zhangxueyou/xxx（你原来的规则，保留）
 /zhangxueyou/*  https://785975464.github.io/zhangxueyou/:splat  200
+/zhangguorong  https://785975464.github.io/zhangguorong  200
+/zhangguorong/*  https://785975464.github.io/zhangguorong/:splat  200
 # 根域名 xxx.com 保留主项目自身页面（可写自己的主页面逻辑）
 /       /index.html  200
